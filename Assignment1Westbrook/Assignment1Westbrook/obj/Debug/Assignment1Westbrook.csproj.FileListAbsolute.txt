@@ -1,0 +1,10 @@
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\bin\Debug\Assignment1Westbrook.exe.config
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\bin\Debug\Assignment1Westbrook.exe
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\bin\Debug\Assignment1Westbrook.pdb
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\obj\Debug\Assignment1Westbrook.csprojAssemblyReference.cache
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\obj\Debug\Assignment1Westbrook.frmAssignment1.resources
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\obj\Debug\Assignment1Westbrook.Properties.Resources.resources
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\obj\Debug\Assignment1Westbrook.csproj.GenerateResource.cache
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\obj\Debug\Assignment1Westbrook.csproj.CoreCompileInputs.cache
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\obj\Debug\Assignment1Westbrook.exe
+D:\Programming\C#\Repos\Assignment1Westbrook\Assignment1Westbrook\obj\Debug\Assignment1Westbrook.pdb
