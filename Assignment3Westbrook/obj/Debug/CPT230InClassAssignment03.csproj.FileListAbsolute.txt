@@ -1,0 +1,10 @@
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\bin\Debug\CPT230InClassAssignment03.exe.config
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\bin\Debug\CPT230InClassAssignment03.exe
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\bin\Debug\CPT230InClassAssignment03.pdb
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\obj\Debug\CPT230InClassAssignment03.csproj.AssemblyReference.cache
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\obj\Debug\CPT230InClassAssignment03.Properties.Resources.resources
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\obj\Debug\CPT230InClassAssignment03.csproj.GenerateResource.cache
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\obj\Debug\CPT230InClassAssignment03.csproj.CoreCompileInputs.cache
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\obj\Debug\CPT230InClassAssignment03.exe
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\obj\Debug\CPT230InClassAssignment03.pdb
+C:\Users\mars8\source\repos\CPT230InClassAssignment03\obj\Debug\CPT230InClassAssignment03.frmAssignment03.resources
