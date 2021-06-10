@@ -368,7 +368,7 @@ namespace CPT230InClass02
                 else if ((txtInputKey.Text == keyAnswer2.ToString() && secondLock == false) && firstLock == true)
                 {
                     txtOutput.Text = "You find a key in this room and stash it away. You are in a room with an exit to the East."; //Give one-time pickup text
-                    txtInput.Text = "Key from Room 5"; //Permanently add to inventory
+                    txtInput.Text = "Key from Room 5."; //Permanently add to inventory
                     txtOutputKey.Text = "You got it!";
                     secondLock = true;
                     key = true; //Change global bool
