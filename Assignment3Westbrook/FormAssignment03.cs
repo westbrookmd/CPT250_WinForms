@@ -9,7 +9,7 @@ namespace CPT230Assignment03Westbrook
     {
         /* A Basic Text-Based Game using WinForms.
          * The Hero has a limited number of heals and a single-use stun.
-         * Replayable with random damage and healing to give different situtations each time. */
+         * Replayable with random damage, healing, and pictures to give different situtations each time. */
 
         // Initializing variables needed before the game starts
         private int heroHP, villianHP, heroHeal, villianStunned;
