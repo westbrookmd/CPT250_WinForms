@@ -192,7 +192,7 @@ namespace CPT230Assignment03Westbrook
             if (damage >= hp) // Not able to overkill
             {
                 hp = 0;
-                txtOutput2.Text = $"The {attacker} hit the {attacked} for " + hp + "!\r\n" + $"The {attacked} falls over in agony!" + txtOutput2.Text;
+                txtOutput2.Text = $"The {attacker} hit the {attacked} for " + hp + "!\r\n" + $"The {attacked} falls over in agony! \r\n" + txtOutput2.Text;
             }
             else
             {
