@@ -17,15 +17,22 @@ namespace WestbrookAssignment4
          * Professor Richards
          * Coding Assignment 4
          * A Basic Calculator with Exception Handling and Validation
-         * 2021 Summer
+         * Summer 2021
          */
+
+
+        // Known bug: You can click any operation multiple times without typing more digits.
+        // This doesn't mess with any functionality (in testing), but it does display in the history and doesn't look good to the user
+        //
+        // Random Feature: Clicking equals multiple times doesn't do anything. This limits you from repeating operations quickly, but
+        //                 it also reduces the aggravation of accidential misclicks.
 
 
 
         // Empty decimal array. This will be used for keeping track of all values entered and outputted.
         // This doesn't necessarily need to be an array. This is less performant, but the values are stored in order if the data needs to be used differently.
         decimal[] history = new decimal[0];
-        // Started with this as a string. An array allows for me to keep an accurate history of what was clicked.
+        // Started with this as a string. An array allows for me to keep an accurate history of what was clicked. If the history doesn't need to be exported and only needs to be displayed, this could just be a string instead.
         string[] operation = new string[0];
 
         public frmWestbrookAssignment4()
@@ -191,25 +198,30 @@ namespace WestbrookAssignment4
                 // If user does not click an operation before clicking equals
                 else
                 {
+                    // Give unique text
                     txtOutput.Text = "Click an operation after typing in a valid decimal. Then enter in another decimal and click the equals button.";
                 }
             }
             catch (Exception ex)
             {
+                // This throws when a user enters a number, clicks an operation but then click equals.
                 if (Validate(txtInput) && history.Length == (operation.Length))
                 {
+                    // Reset program to default, without instructions.
                     Reset();
+                    // Display unique text for error
                     txtOutput.Text = "Click an operation after typing in a valid decimal. Then enter in another decimal and click the equals button.";
                 }
                 else
                 {
+                    // Input either wasn't able to be validated and/or the user didn't have an operation clicked before clicking equals
                     MessageBox.Show(ex.Message, ex.GetType().ToString());
                 }
                 
             }
         }
 
-        // Main source of validating input. Two points of exit for now.
+        // Main source of validating input. Two points of exit for now
         public bool Validate(TextBox textbox)
         {
             // Make sure input isn't an empty string
@@ -250,19 +262,19 @@ namespace WestbrookAssignment4
         // Checks that the input is a decimal
         public bool IsValidDecimal(TextBox textbox)
         {
-            return decimal.TryParse(textbox.Text, out _);
+            return decimal.TryParse(textbox.Text, out _); // We don't need the decimal result in our implementation
         }
 
         // Checks that the decimal will not overflow
         public bool IsInRange(decimal a)
         {
-            return a > decimal.MinValue && a < decimal.MaxValue;
+            return a > decimal.MinValue && a < decimal.MaxValue; // As long as we're within decimal min and max
         }
 
         // Returns true if there is any input
         public bool IsPresent(TextBox textbox)
         {
-            return !(textbox.Text == "");
+            return !(textbox.Text == ""); // true as long as it isn't an empty string. Consider changing if nullable objects need to be implemented
         }
 
         // How to keep track of user input
@@ -271,8 +283,8 @@ namespace WestbrookAssignment4
             // https://asp-net-example.blogspot.com/2013/09/c-array-append-add-new-item-in-end-of.html
             // Found out how to do that from this link
             // Add one size to history array
-            Array.Resize(ref history, history.Length + 1);
-            // Add value to end of history array
+            Array.Resize(ref history, history.Length + 1); // How I understand this works: create array with X length -> copy elements from first array to new array -> delete old array -> rename new array to old array name
+            // Add value to end of new history array
             history[history.Length - 1] = a;
         }
 
@@ -282,8 +294,8 @@ namespace WestbrookAssignment4
             // https://asp-net-example.blogspot.com/2013/09/c-array-append-add-new-item-in-end-of.html
             // // Found out how to do that from this link
             // Add one size to history array
-            Array.Resize(ref operation, operation.Length + 1);
-            // Add value to end of history array
+            Array.Resize(ref operation, operation.Length + 1); // How I understand this works: create array with X length -> copy elements from first array to new array -> delete old array -> rename new array to old array name
+            // Add value to end of new history array
             operation[operation.Length - 1] = operationtoadd;
         }
 
@@ -295,7 +307,7 @@ namespace WestbrookAssignment4
             // For how many times we've entered a number
             for (int i = 0; i < history.Length; i++)
             {
-                // Output the number we input
+                // Output the number we input (we've already validated)
                 txtOutput.Text = history[i] + "\r\n" + txtOutput.Text;
                 // Begin looking out for exceptions
                 try
@@ -323,7 +335,6 @@ namespace WestbrookAssignment4
                 // Just in case we have an exception here
                 catch (Exception ex)
                 {
-
                     txtOutput.Text = ex.Message + "" + ex.GetType().ToString() + " \r\n" + txtOutput.Text;
                 }
                 
