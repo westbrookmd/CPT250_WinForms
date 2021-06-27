@@ -8,3 +8,13 @@ C:\Users\mars8\source\repos\WestbrookAssignment4\obj\Debug\Assignment4Westbrook.
 C:\Users\mars8\source\repos\WestbrookAssignment4\obj\Debug\Assignment4Westbrook.csproj.CoreCompileInputs.cache
 C:\Users\mars8\source\repos\WestbrookAssignment4\obj\Debug\WestbrookAssignment4.exe
 C:\Users\mars8\source\repos\WestbrookAssignment4\obj\Debug\WestbrookAssignment4.pdb
+C:\Users\mars8\source\repos\Assignment4Westbrook\bin\Debug\WestbrookAssignment4.exe.config
+C:\Users\mars8\source\repos\Assignment4Westbrook\bin\Debug\WestbrookAssignment4.exe
+C:\Users\mars8\source\repos\Assignment4Westbrook\bin\Debug\WestbrookAssignment4.pdb
+C:\Users\mars8\source\repos\Assignment4Westbrook\obj\Debug\Assignment4Westbrook.csproj.AssemblyReference.cache
+C:\Users\mars8\source\repos\Assignment4Westbrook\obj\Debug\WestbrookAssignment4.frmWestbrookAssignment4.resources
+C:\Users\mars8\source\repos\Assignment4Westbrook\obj\Debug\WestbrookAssignment4.Properties.Resources.resources
+C:\Users\mars8\source\repos\Assignment4Westbrook\obj\Debug\Assignment4Westbrook.csproj.GenerateResource.cache
+C:\Users\mars8\source\repos\Assignment4Westbrook\obj\Debug\Assignment4Westbrook.csproj.CoreCompileInputs.cache
+C:\Users\mars8\source\repos\Assignment4Westbrook\obj\Debug\WestbrookAssignment4.exe
+C:\Users\mars8\source\repos\Assignment4Westbrook\obj\Debug\WestbrookAssignment4.pdb

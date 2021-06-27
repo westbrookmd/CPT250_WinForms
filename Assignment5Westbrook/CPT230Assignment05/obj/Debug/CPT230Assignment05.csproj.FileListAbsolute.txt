@@ -1,0 +1,10 @@
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\obj\Debug\CPT230Assignment05.csproj.AssemblyReference.cache
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\obj\Debug\CPT230Assignment05.frmAssignment05.resources
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\obj\Debug\CPT230Assignment05.Properties.Resources.resources
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\obj\Debug\CPT230Assignment05.csproj.GenerateResource.cache
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\obj\Debug\CPT230Assignment05.csproj.CoreCompileInputs.cache
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\bin\Debug\CPT230Assignment05.exe.config
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\bin\Debug\CPT230Assignment05.exe
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\bin\Debug\CPT230Assignment05.pdb
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\obj\Debug\CPT230Assignment05.exe
+C:\Users\mars8\source\repos\CPT230Assignment05\CPT230Assignment05\obj\Debug\CPT230Assignment05.pdb

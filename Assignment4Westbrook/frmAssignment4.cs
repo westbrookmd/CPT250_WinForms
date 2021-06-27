@@ -24,8 +24,11 @@ namespace WestbrookAssignment4
         // Known bug: You can click any operation multiple times without typing more digits.
         // This doesn't mess with any functionality (in testing), but it does display in the history and doesn't look good to the user
         //
+        // Known bug: Attempting to do multiple calculations back to back doesn't work. Only the last two values inputed with an operation in between and an equals sign at the end are calculated
+        //
         // Random Feature: Clicking equals multiple times doesn't do anything. This limits you from repeating operations quickly, but
         //                 it also reduces the aggravation of accidential misclicks.
+
 
 
 
