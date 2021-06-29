@@ -31,8 +31,10 @@ namespace CPT230Assignment05
         {
             this.pnlMain = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.lblWin = new System.Windows.Forms.Label();
-            this.lblStart = new System.Windows.Forms.Label();
+            this.btnUp = new System.Windows.Forms.Button();
+            this.btnLeft = new System.Windows.Forms.Button();
+            this.btnRight = new System.Windows.Forms.Button();
+            this.btnDown = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pnlMain
@@ -43,56 +45,71 @@ namespace CPT230Assignment05
             this.pnlMain.Size = new System.Drawing.Size(400, 400);
             this.pnlMain.TabIndex = 5;
             // 
-            // lblWin
+            // btnUp
             // 
-            this.lblWin.AutoSize = true;
-            this.lblWin.BackColor = System.Drawing.SystemColors.Highlight;
-            this.lblWin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblWin.Location = new System.Drawing.Point(335, 14);
-            this.lblWin.MinimumSize = new System.Drawing.Size(40, 40);
-            this.lblWin.Name = "lblWin";
-            this.lblWin.Size = new System.Drawing.Size(40, 40);
-            this.lblWin.TabIndex = 6;
-            this.lblWin.Text = "Win!";
-            this.lblWin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblWin.Click += new System.EventHandler(this.lblWin_Click);
+            this.btnUp.Location = new System.Drawing.Point(159, 512);
+            this.btnUp.Name = "btnUp";
+            this.btnUp.Size = new System.Drawing.Size(75, 23);
+            this.btnUp.TabIndex = 8;
+            this.btnUp.Text = "Up";
+            this.btnUp.UseVisualStyleBackColor = true;
+            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
             // 
-            // lblStart
+            // btnLeft
             // 
-            this.lblStart.AutoSize = true;
-            this.lblStart.BackColor = System.Drawing.SystemColors.Info;
-            this.lblStart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblStart.Location = new System.Drawing.Point(174, 455);
-            this.lblStart.MinimumSize = new System.Drawing.Size(40, 40);
-            this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(40, 40);
-            this.lblStart.TabIndex = 7;
-            this.lblStart.Text = "Start";
-            this.lblStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblStart.Click += new System.EventHandler(this.lblStart_Click);
+            this.btnLeft.Location = new System.Drawing.Point(84, 539);
+            this.btnLeft.Name = "btnLeft";
+            this.btnLeft.Size = new System.Drawing.Size(75, 23);
+            this.btnLeft.TabIndex = 9;
+            this.btnLeft.Text = "Left";
+            this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
+            // 
+            // btnRight
+            // 
+            this.btnRight.Location = new System.Drawing.Point(235, 539);
+            this.btnRight.Name = "btnRight";
+            this.btnRight.Size = new System.Drawing.Size(75, 23);
+            this.btnRight.TabIndex = 10;
+            this.btnRight.Text = "Right";
+            this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
+            // 
+            // btnDown
+            // 
+            this.btnDown.Location = new System.Drawing.Point(159, 568);
+            this.btnDown.Name = "btnDown";
+            this.btnDown.Size = new System.Drawing.Size(75, 23);
+            this.btnDown.TabIndex = 11;
+            this.btnDown.Text = "Down";
+            this.btnDown.UseVisualStyleBackColor = true;
+            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
             // 
             // frmAssignment05
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 504);
-            this.Controls.Add(this.lblStart);
-            this.Controls.Add(this.lblWin);
+            this.ClientSize = new System.Drawing.Size(427, 609);
+            this.Controls.Add(this.btnDown);
+            this.Controls.Add(this.btnRight);
+            this.Controls.Add(this.btnLeft);
+            this.Controls.Add(this.btnUp);
             this.Controls.Add(this.pnlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmAssignment05";
             this.Text = "Assignment05";
             this.Load += new System.EventHandler(this.frmAssignment05_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Panel pnlMain;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label lblWin;
-        private System.Windows.Forms.Label lblStart;
+        private System.Windows.Forms.Button btnUp;
+        private System.Windows.Forms.Button btnLeft;
+        private System.Windows.Forms.Button btnRight;
+        private System.Windows.Forms.Button btnDown;
     }
 }
 
