@@ -1,0 +1,10 @@
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\obj\Debug\Westbrook0607.csproj.AssemblyReference.cache
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\obj\Debug\CPT230InClass05.frmAssignment0607.resources
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\obj\Debug\CPT230InClass05.Properties.Resources.resources
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\obj\Debug\Westbrook0607.csproj.GenerateResource.cache
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\obj\Debug\Westbrook0607.csproj.CoreCompileInputs.cache
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\obj\Debug\CPT230InClass05.exe
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\obj\Debug\CPT230InClass05.pdb
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\bin\Debug\CPT230InClass05.exe.config
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\bin\Debug\CPT230InClass05.exe
+D:\Programming\C#\Repos\CPT250\Assignment0607\CPT230InClass05\bin\Debug\CPT230InClass05.pdb
