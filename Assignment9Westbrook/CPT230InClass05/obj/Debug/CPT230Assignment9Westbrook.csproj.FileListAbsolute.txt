@@ -1,0 +1,10 @@
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\bin\Debug\CPT230InClass05.exe.config
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\bin\Debug\CPT230InClass05.exe
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\bin\Debug\CPT230InClass05.pdb
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230Assignment9Westbrook.csproj.AssemblyReference.cache
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230InClass05.FFClone.resources
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230InClass05.Properties.Resources.resources
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230Assignment9Westbrook.csproj.GenerateResource.cache
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230Assignment9Westbrook.csproj.CoreCompileInputs.cache
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230InClass05.exe
+C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230InClass05.pdb

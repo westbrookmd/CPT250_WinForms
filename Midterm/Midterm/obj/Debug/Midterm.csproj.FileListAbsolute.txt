@@ -1,0 +1,11 @@
+I:\Murach\Midterm\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\mars8\Downloads\Midterm\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\mars8\Downloads\Midterm\Midterm\bin\Debug\Midterm.exe
+C:\Users\mars8\Downloads\Midterm\Midterm\bin\Debug\Midterm.pdb
+C:\Users\mars8\Downloads\Midterm\Midterm\obj\Debug\Midterm.csproj.AssemblyReference.cache
+C:\Users\mars8\Downloads\Midterm\Midterm\obj\Debug\Midterm.Form1.resources
+C:\Users\mars8\Downloads\Midterm\Midterm\obj\Debug\Midterm.Properties.Resources.resources
+C:\Users\mars8\Downloads\Midterm\Midterm\obj\Debug\Midterm.csproj.GenerateResource.cache
+C:\Users\mars8\Downloads\Midterm\Midterm\obj\Debug\Midterm.csproj.CoreCompileInputs.cache
+C:\Users\mars8\Downloads\Midterm\Midterm\obj\Debug\Midterm.exe
+C:\Users\mars8\Downloads\Midterm\Midterm\obj\Debug\Midterm.pdb
