@@ -5,7 +5,7 @@ using System.Windows.Forms;
  * Marshall Westbrook
  * CPT230
  * 2021SU
- * Assignemnt 9
+ * Assignemnt 10
  */
 namespace CPT230InClass05
 {
@@ -27,7 +27,7 @@ namespace CPT230InClass05
         {
             startTime = DateTime.Now;
 
-            villian = new Villian(pbrVHP, lblVName, new Label(), pbrV, "The Big Bad Wolf", 300, 300, 0, 0, 30, 0, 5);
+            villian = new Villian(pbrVHP, lblVName, new Label(), pbrV, "The Big Bad Wolf", 300, 300, 0, 0, 60, 0, 5);
 
 
             //setup hero array
@@ -120,24 +120,31 @@ namespace CPT230InClass05
         {
             txtOutput.Text = String.Format("The heroes win!!!\r\n{0}", txtOutput.Text);
             // Diable Buttons
-            btnAttack.Enabled = false;
-            bntSpell.Enabled = false;
-            cbxSpell.Enabled = false;
+            //btnAttack.Enabled = false;
+            //bntSpell.Enabled = false;
+            //cbxSpell.Enabled = false;
             // Show retry and timer
-            btnRetry.Visible = true;
+            //btnRetry.Visible = true;
             TimeTaken();
+            this.Tag = txtOutput.Text;
+            this.DialogResult = DialogResult.Yes; //changes object's visibility, doesn't necessarily close it or delete it from memory
+            NewGame();
+
         }
 
         private void WeLost()
         {
             txtOutput.Text = String.Format("The heroes lost...\r\n {0}", txtOutput.Text);
             // Disable Buttons
-            btnAttack.Enabled = false;
-            bntSpell.Enabled = false;
-            cbxSpell.Enabled = false;
+            //btnAttack.Enabled = false;
+            //bntSpell.Enabled = false;
+            //cbxSpell.Enabled = false;
             // Show retry and timer
-            btnRetry.Visible = true;
+            //btnRetry.Visible = true;
             TimeTaken();
+            this.Tag = txtOutput.Text;
+            this.DialogResult = DialogResult.No; //changes object's visibility, doesn't necessarily close it or delete it from memory
+            NewGame();
         }
         private bool DidWeLose()
         {
@@ -155,14 +162,18 @@ namespace CPT230InClass05
             // Create a double that holds the result of the start of the round less than the current time 
             double timeTaken = (endTime - startTime).TotalSeconds;
             // Display two decimal places
-            lblTimer.Text = String.Format("Time Taken: {0:f2} seconds", timeTaken);
+            txtOutput.Text = String.Format("Time Taken: {0:f2} seconds\r\n", timeTaken) + txtOutput.Text;
             // Make the time taken label visible
-            lblTimer.Visible = true;
 
         }
 #pragma warning disable IDE1006 // Naming Styles
         private void btnRetry_Click(object sender, EventArgs e)
 #pragma warning restore IDE1006 // Naming Styles
+        {
+            NewGame();
+        }
+
+        private void NewGame()
         {
             //Reset each hero
             foreach (Hero hero in heroes)

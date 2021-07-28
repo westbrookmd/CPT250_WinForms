@@ -8,3 +8,14 @@ C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230Assignm
 C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230Assignment9Westbrook.csproj.CoreCompileInputs.cache
 C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230InClass05.exe
 C:\Users\mars8\Downloads\CPT230InClass05\CPT230InClass05\obj\Debug\CPT230InClass05.pdb
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\bin\Debug\CPT230InClass05.exe.config
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\bin\Debug\CPT230InClass05.exe
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\bin\Debug\CPT230InClass05.pdb
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\obj\Debug\CPT230Assignment9Westbrook.csproj.AssemblyReference.cache
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\obj\Debug\CPT230InClass05.FFClone.resources
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\obj\Debug\CPT230InClass05.Properties.Resources.resources
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\obj\Debug\CPT230Assignment9Westbrook.csproj.GenerateResource.cache
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\obj\Debug\CPT230Assignment9Westbrook.csproj.CoreCompileInputs.cache
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\obj\Debug\CPT230InClass05.exe
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\obj\Debug\CPT230InClass05.pdb
+D:\Programming\C#\Repos\CPT250\Assignment10Westbrook\CPT230InClass05\obj\Debug\CPT230InClass05.GameControllerForm.resources

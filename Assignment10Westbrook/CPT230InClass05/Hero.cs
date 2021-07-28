@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace CPT230InClass05
 {
-    class Hero
+    class Hero : ICharacterizable
     {
         //Class Data
         private ProgressBar pbrHP;
@@ -67,7 +67,7 @@ namespace CPT230InClass05
         }
 
         //Methods
-        private void SetupGUI()
+        public void SetupGUI()
         {
             this.lblName.Text = this.name;
             this.lblHP.Text = currentHP.ToString();

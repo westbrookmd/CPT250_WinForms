@@ -16,7 +16,7 @@ namespace CPT230InClass05
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FFClone());
+            Application.Run(new GameControllerForm());
         }
     }
 }

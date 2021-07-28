@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace CPT230InClass05
 {
-    class Villian
+    class Villian : ICharacterizable
     {
         //Class Data
         protected ProgressBar pbrHP;
@@ -62,7 +62,7 @@ namespace CPT230InClass05
             this.random = new Random();
         }
         //Methods
-        private void SetupGUI()
+        public void SetupGUI()
         {
             this.lblName.Text = this.name;
             this.lblHP.Text = this.currentHP.ToString();

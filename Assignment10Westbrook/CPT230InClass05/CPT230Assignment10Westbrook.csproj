@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,14 @@
   <ItemGroup>
     <Compile Include="BigGoblinVillian.cs" />
     <Compile Include="BlackMage.cs" />
+    <Compile Include="GameControllerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameControllerForm.Designer.cs">
+      <DependentUpon>GameControllerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IAttackable.cs" />
+    <Compile Include="ICharacterizable.cs" />
     <Compile Include="Damage.cs" />
     <Compile Include="Fast1.cs" />
     <Compile Include="FastDogVillian.cs" />
@@ -61,6 +70,8 @@
     <Compile Include="Fire1.cs" />
     <Compile Include="Heavy1.cs" />
     <Compile Include="Hero.cs" />
+    <Compile Include="IDamageable.cs" />
+    <Compile Include="ISetupable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Smite1.cs" />
@@ -70,6 +81,9 @@
     <Compile Include="WhiteMage.cs" />
     <EmbeddedResource Include="FFClone.resx">
       <DependentUpon>FFClone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameControllerForm.resx">
+      <DependentUpon>GameControllerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
