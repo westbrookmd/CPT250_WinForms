@@ -1,0 +1,15 @@
+C:\Users\mars8\Downloads\FinalExam\FinalExam\bin\Debug\netcoreapp3.1\FinalExam.exe
+C:\Users\mars8\Downloads\FinalExam\FinalExam\bin\Debug\netcoreapp3.1\FinalExam.deps.json
+C:\Users\mars8\Downloads\FinalExam\FinalExam\bin\Debug\netcoreapp3.1\FinalExam.runtimeconfig.json
+C:\Users\mars8\Downloads\FinalExam\FinalExam\bin\Debug\netcoreapp3.1\FinalExam.runtimeconfig.dev.json
+C:\Users\mars8\Downloads\FinalExam\FinalExam\bin\Debug\netcoreapp3.1\FinalExam.dll
+C:\Users\mars8\Downloads\FinalExam\FinalExam\bin\Debug\netcoreapp3.1\FinalExam.pdb
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.csproj.AssemblyReference.cache
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.Form1.resources
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.csproj.GenerateResource.cache
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.AssemblyInfoInputs.cache
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.AssemblyInfo.cs
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.csproj.CoreCompileInputs.cache
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.dll
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.pdb
+C:\Users\mars8\Downloads\FinalExam\FinalExam\obj\Debug\netcoreapp3.1\FinalExam.genruntimeconfig.cache
