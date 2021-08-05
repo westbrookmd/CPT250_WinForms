@@ -1,13 +1,7 @@
 ﻿using CPT230Assignment05;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CPT230InClass05
@@ -21,7 +15,6 @@ namespace CPT230InClass05
      * Summer 2021
      * Three Projects in One
      * Saving and Loading to "C:\WestbrookAssignment11_CPT230_21SU\"
-     * Couldn't get the maze position to update after quitting and loading.
      */
 
         Form FightForm;
@@ -38,8 +31,8 @@ namespace CPT230InClass05
         // Simple boolean that is changed when the user clicks the advanced details button (toggle visibility of advanced controls)
         bool advancedInfoHidden = true;
         string mazeposition;
-        int mazePositionOne = 9;
-        int mazePositionTwo = 4;
+        public int mazePositionOne = 9;
+        public int mazePositionTwo = 4;
         public static string baseFileName = "CPT230_WestbrookAssignment11_21SU";
         private string gameResultsFileName = (baseFileName + "_GameResults.txt");
         private string gameHistoryFileName = (baseFileName + "_GameHistory.txt");
@@ -72,8 +65,8 @@ namespace CPT230InClass05
         private void btnPlay_Click(object sender, EventArgs e)
         {
             this.Visible = false; //turns this form's visibility off
-            
-            DialogResult  result = FightForm.ShowDialog(); // displays fight form. showdialog returns a dialog result
+
+            DialogResult result = FightForm.ShowDialog(); // displays fight form. showdialog returns a dialog result
             // 2 main ways to pass info
             //dialog result (Cancel, Ok, Yes, None, No, Abort)
             //Tags
@@ -152,7 +145,7 @@ namespace CPT230InClass05
             // get rid of all of our points
             chrtGameResults.Series["Game Results"].Points.Clear();
             // create all of our points each time we play a game. Could optimize this if performance issues arise
-            
+
             UpdateChart();
 
         }
@@ -206,14 +199,15 @@ namespace CPT230InClass05
                 decimal winRate = (wins / (wins + losses)) * 100;
                 lblWinRate.Text = String.Format("Win Rate: {0:N1}%", winRate);
             }
-            
+
             //update chart
             UpdateChart();
             //Update GUI
             AdvancedInfoToggle();
             //update maze
-            frmMaze.mazePositionOne = mazePositionOne;
-            frmMaze.mazePositionTwo = mazePositionTwo;
+            //frmMaze.mazePositionOne = mazePositionOne;
+            //frmMaze.mazePositionTwo = mazePositionTwo;
+            MazeForm = new frmMaze(mazePositionOne, mazePositionTwo);
 
         }
 
@@ -239,7 +233,7 @@ namespace CPT230InClass05
             {
                 txtSummary.Text = String.Format("Select an item to show first!\r\ngameHistory:{0}\r\ngameHistory Count:{1}\r\nlstboxGameResults.SelectedIndex:{2}", gameHistory, gameHistory.Count, lstboxGameResults.SelectedIndex);
             }
-            
+
         }
 
         // I wanted to try to mess with form sizing to display different controls
@@ -398,16 +392,16 @@ namespace CPT230InClass05
             streamWriterMazePosition.WriteLine(mazeposition);
             streamWriterMazePosition.Close();
 
-            
 
-            
+
+
 
         }
 
         public void btnLoad_Click(object sender, EventArgs e)
         {
             StreamReader streamReaderGameResults = new StreamReader(new FileStream(path + gameResultsFileName, FileMode.OpenOrCreate, FileAccess.Read));
-            
+
 
             string firstLine = streamReaderGameResults.ReadLine();
             string result = "";
@@ -499,7 +493,7 @@ namespace CPT230InClass05
                 {
                     //do nothing
                 }
-            }   
+            }
 
             streamReaderGameWinRateDecimal.Close();
 
@@ -511,40 +505,17 @@ namespace CPT230InClass05
             StreamReader streamReaderMazePosition = new StreamReader(new FileStream(path + mazePositionFileName, FileMode.OpenOrCreate, FileAccess.Read));
             //separate two integers 
             string mazePositionLine = streamReaderMazePosition.ReadLine();
-            string mazePositionresult = "";
             bool firstdone = false;
             bool seconddone = false;
-            
-            foreach (char cb in mazePositionLine)
-            {
-                if (!(cb == Convert.ToChar("|")))
-                {
-                    mazePositionresult += cb;
-                }
-                else if (cb == Convert.ToChar("|"))
-                {
-                    if (!firstdone)
-                    {
-                        firstdone = true;
-                        mazePositionOne = Convert.ToInt32(mazePositionresult);
-                        mazePositionresult = "";
-                    }
-                    else if (firstdone)
-                    {
-                        seconddone = true;
-                        mazePositionTwo = Convert.ToInt32(mazePositionresult);
-                        mazePositionresult = "";
-                    }
-                }
-                else
-                {
-                    //do nothing
-                }
-            }
+            // find  the 
+            int pos = mazePositionLine.IndexOf('|');
+            mazePositionOne = Convert.ToInt32(mazePositionLine.Substring(0, pos));
+            mazePositionTwo = Convert.ToInt32(mazePositionLine.Substring(pos + 1));
             streamReaderMazePosition.Close();
+            //MazeForm = new frmMaze(mazePositionOne, mazePositionTwo);
             LoadData();
-            }
-            
         }
+
     }
+}
 

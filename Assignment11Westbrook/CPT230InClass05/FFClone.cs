@@ -78,7 +78,7 @@ namespace CPT230InClass05
                     cbxSpell.SelectedIndex = 0;
                 }
             }
-            else 
+            else
             {
                 turnCount = 99;
             }
@@ -86,7 +86,7 @@ namespace CPT230InClass05
             {
                 bntSpell.Enabled = false;
             }
-            else 
+            else
             {
                 bntSpell.Enabled = true;
             }
@@ -255,5 +255,5 @@ namespace CPT230InClass05
             SetupTurn();
             return damage;
         }
-    } 
+    }
 }

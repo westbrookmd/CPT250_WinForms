@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CPT230InClass05
@@ -44,8 +41,8 @@ namespace CPT230InClass05
             this.random = new Random();
         }
         public Hero(ProgressBar pbrHP, ProgressBar pbrMP, Label lblName, Label lblHP,
-            PictureBox pbxImage, string name, int maxHP, int currentHP, 
-            int maxMP, int currentMP, int strength, int magiStrength, 
+            PictureBox pbxImage, string name, int maxHP, int currentHP,
+            int maxMP, int currentMP, int strength, int magiStrength,
             int defense)
         {
             this.pbrHP = pbrHP;

@@ -1,12 +1,5 @@
-﻿using CPT230InClass05;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CPT230Assignment05
@@ -37,8 +30,8 @@ namespace CPT230Assignment05
         // Set up the game to use randomness upon second game completion
         Random random = new Random();
         int encounterChance = 5; // 1/5 per tile
-        public static int mazePositionOne = 9;
-        public static int mazePositionTwo = 4;
+        //public static int mazePositionOne = 9;
+        //public static int mazePositionTwo = 4;
 
 
 
@@ -55,7 +48,7 @@ namespace CPT230Assignment05
             PlayFirstGame(firstMaze, firstWhitelist, One, Two);
             // Set the button visibilities to prevent going out of bounds at the start of the game
             SetButtons();
-            
+
         }
 
 
@@ -64,7 +57,7 @@ namespace CPT230Assignment05
         {
             // Show message box with instructions before the maze is visible
             ShowInstructions();
-            
+
 
 
         }
@@ -83,12 +76,12 @@ namespace CPT230Assignment05
                         if (firstMaze[i, j].Text == textToFind)
                         {
                             // create array of ints with the X and Y answer
-                             int[] wallWithTextIndex = { i, j};
+                            int[] wallWithTextIndex = { i, j };
                             // return it to the caller
                             return wallWithTextIndex;
-                        }   
+                        }
                     }
-                }             
+                }
             }
             // if there isn't a wall with our current position, return null. This shouldn't happen, but if it does the program will crash
             return null;
@@ -171,7 +164,7 @@ namespace CPT230Assignment05
                 for (int j = 0; j < maze.GetLength(1); j++)
                 {
                     // Build a wall if value is not true in whitelist
-                    if (whitelist[i,j] == false)
+                    if (whitelist[i, j] == false)
                     {
                         // Get top left of panel
                         Point wallLocation = wallStart;
@@ -181,7 +174,7 @@ namespace CPT230Assignment05
                         wallLocation.Y = (i * wallSize.Height);
 
                         // Create labels and give them properties
-                        maze[i,j] = BuildWallLabels(maze[i, j], wallBackColor, wallForeColor, wallSize, wallLocation);
+                        maze[i, j] = BuildWallLabels(maze[i, j], wallBackColor, wallForeColor, wallSize, wallLocation);
                         pnlMain.Controls.Add(maze[i, j]);
                     }
                 }
@@ -229,7 +222,7 @@ namespace CPT230Assignment05
             Color extraWallBackColor = Color.FromName("ActiveCaptionText");
             Color extraWallForeColor = Color.FromName("Control");
             Size extraWallSize = new Size(40, 40);
-            Point winButtonLocation = new Point(332, 30);    
+            Point winButtonLocation = new Point(332, 30);
 
             // Individual Locations for Left, Right, and Above the Win Label
             Point extraWallLocationLeft = winButtonLocation;
@@ -270,7 +263,7 @@ namespace CPT230Assignment05
             // Find panel top left corner
             Point startingpoint = pnlMain.Location;
             // Offset the starting point to make it in the center of the bottom of the panel (+ 10 pixels Y and -10 pixels X)
-            startingpoint.Offset(pnlMain.Width/2 - 10,pnlMain.Height + 10);
+            startingpoint.Offset(pnlMain.Width / 2 - 10, pnlMain.Height + 10);
             // set cursor location
             Cursor.Position = PointToScreen(startingpoint);
         }
@@ -413,7 +406,7 @@ namespace CPT230Assignment05
                 whitelist[1, 8] = true;
                 whitelist[0, 8] = true;
             }
-            
+
         }
 
         // Set start and win locations
@@ -422,14 +415,14 @@ namespace CPT230Assignment05
             try
             {
                 maze[0, 1].Text = "Win";
-                maze[mazePositionOne, mazePositionTwo].Text = "You";
+                maze[One, Two].Text = "You";
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.StackTrace, ex.Message);
             }
-            
+
         }
 
         // Remove all controls from the Panel
@@ -551,7 +544,7 @@ namespace CPT230Assignment05
                     this.DialogResult = DialogResult.OK;
                 }
             }
-            
+
         }
 
         private bool CheckIfWon(Label target)
@@ -612,7 +605,7 @@ namespace CPT230Assignment05
                             // Check if we've won. If not, set the text to "You"
                             wonFirstGame = CheckIfWon(firstMaze[i, j]);
                             // check if this is an encounter
-                            
+
                         }
                     }
                 }

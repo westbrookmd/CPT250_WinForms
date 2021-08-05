@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CPT230InClass05
@@ -51,7 +47,7 @@ namespace CPT230InClass05
             if (attack.Type == "Physical")
             {
                 damage -= this.defense;
-                
+
                 if (damage < 1)
                 {
                     damage = 1;
