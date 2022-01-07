@@ -30,12 +30,10 @@ namespace CPT230Assignment05
         // Set up the game to use randomness upon second game completion
         Random random = new Random();
         int encounterChance = 5; // 1/5 per tile
-        //public static int mazePositionOne = 9;
-        //public static int mazePositionTwo = 4;
+        bool newPlayer;
 
 
-
-        public frmMaze(int mazePositionOne, int mazePositionTwo)
+        public frmMaze(int mazePositionOne, int mazePositionTwo, bool firstTimePlaying)
         {
             InitializeComponent();
             int One = mazePositionOne;
@@ -48,7 +46,11 @@ namespace CPT230Assignment05
             PlayFirstGame(firstMaze, firstWhitelist, One, Two);
             // Set the button visibilities to prevent going out of bounds at the start of the game
             SetButtons();
-
+            // only show instructions on first maze
+            if(firstTimePlaying)
+            {
+                newPlayer = true;
+            }
         }
 
 
@@ -56,10 +58,11 @@ namespace CPT230Assignment05
 
         {
             // Show message box with instructions before the maze is visible
-            ShowInstructions();
-
-
-
+            if (newPlayer)
+            {
+                ShowInstructions();
+            }
+            newPlayer = false;
         }
 
         // This method finds a label with the given text parameter and returns an array of ints with Position 0 and Position 1 as X,Y respectively

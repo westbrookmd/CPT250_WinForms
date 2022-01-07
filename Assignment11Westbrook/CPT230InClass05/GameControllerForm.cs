@@ -30,6 +30,7 @@ namespace CPT230InClass05
         List<decimal> gameWinRateDecimal = new List<decimal>(1);
         // Simple boolean that is changed when the user clicks the advanced details button (toggle visibility of advanced controls)
         bool advancedInfoHidden = true;
+        bool firstTimePlaying = true;
         string mazeposition;
         public int mazePositionOne = 9;
         public int mazePositionTwo = 4;
@@ -207,7 +208,7 @@ namespace CPT230InClass05
             //update maze
             //frmMaze.mazePositionOne = mazePositionOne;
             //frmMaze.mazePositionTwo = mazePositionTwo;
-            MazeForm = new frmMaze(mazePositionOne, mazePositionTwo);
+            MazeForm = new frmMaze(mazePositionOne, mazePositionTwo, false);
 
         }
 
@@ -215,7 +216,7 @@ namespace CPT230InClass05
         {
             // Create a new game at load
             FightForm = new FFClone();
-            MazeForm = new frmMaze(mazePositionOne, mazePositionTwo);
+            MazeForm = new frmMaze(mazePositionOne, mazePositionTwo, firstTimePlaying);
         }
 
         private void btnHistory_Click(object sender, EventArgs e)
@@ -298,8 +299,6 @@ namespace CPT230InClass05
                 mazeposition = (string)MazeForm.Tag;
                 string mazePositionresult = "";
                 bool firstdone = false;
-                bool seconddone = false;
-
                 foreach (char cb in mazeposition)
                 {
                     if (!(cb == Convert.ToChar("|")))
@@ -316,7 +315,6 @@ namespace CPT230InClass05
                         }
                         else if (firstdone)
                         {
-                            seconddone = true;
                             mazePositionTwo = Convert.ToInt32(mazePositionresult);
                             mazePositionresult = "";
                         }
