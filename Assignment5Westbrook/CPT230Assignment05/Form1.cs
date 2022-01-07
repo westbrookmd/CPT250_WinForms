@@ -91,12 +91,12 @@ namespace CPT230Assignment05
             if (gameNumber == "second")
             {
                 MessageBox.Show("Instructions: \r\n Move your mouse through the maze without touching the black area. " +
-                    "If you'd like to see these instructions again, click the start label!", "Assignment 5 Instructions");
+                    "If you'd like to see these instructions again, click the start label!", "Mouse-based Maze Instructions");
             }
             // Show on program launch. Can also be displayed when start label is clicked
             else
             {
-                MessageBox.Show("Instructions: \r\n Click the buttons to navigate around the maze. If you get to the \"Win\" tile, you win!", "Assignment 5 Instructions");
+                MessageBox.Show("Instructions: \r\n Click the buttons to navigate around the maze. If you get to the \"Win\" tile, you win!", "Button-Based Maze Instructions");
             }
         }
 
@@ -206,7 +206,7 @@ namespace CPT230Assignment05
             lblStart.Text = "Start";
 
             //Add Instructions and Win Events
-            lblStart.MouseClick += (sender, e) => ShowInstructions();
+            lblStart.MouseClick += (sender, e) => ShowInstructions("second");
             lblWin.MouseClick += (sender, e) => WinSecondGame();
             // Add to panel
             pnlMain.Controls.Add(lblStart);
@@ -417,13 +417,6 @@ namespace CPT230Assignment05
         public void ClearPanel()
         {
             pnlMain.Controls.Clear();
-        }
-
-        // If you click the start label show the instructions
-        private void lblStart_Click(object sender, EventArgs e)
-        {
-            string gameNumber = "second";
-            ShowInstructions(gameNumber);
         }
 
         // We are checking when buttons should be visible rather than finding when they shouldn't be visible
